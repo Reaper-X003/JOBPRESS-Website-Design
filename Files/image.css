@@ -1,0 +1,70 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #627199;
+}
+
+.container{
+    font-weight: 500;
+    font-size: 14px;
+}
+.navbar-nav .li{
+    opacity: 30%;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #ffffff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fdf2f2;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: auto;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #e20a0a; /* Background color of the dropdown menu */
+}
+
+.dropdown-item {
+  color: #252525; /* Text color of dropdown items */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa; /* Background color of dropdown items on hover/focus */
+}
+
+.battan{
+    display: flex;
+    flex-direction: row;
+    
+    
+}

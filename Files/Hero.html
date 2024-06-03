@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS LINKS -->
+    <link rel="stylesheet" href="/Files/hero.css">
+    <link rel="stylesheet" href="/Files/contact.css">
+    <link rel="stylesheet" href="/Files/candidates.css">
+    <link rel="stylesheet" href="/Files/footerstyle.css">
+    <link rel="stylesheet" href="/Files/helptab.css">
+    <link rel="stylesheet" href="/Files/postjob1.css">
+    <link rel="stylesheet" href="/Files/contact.css">
+
+
+    <!-- CSS ENDS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        * {
+
+            padding: 0;
+            margin: 0;
+            font-family: 'poppins';
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+        }
+
+        /* Color of the links BEFORE scroll */
+        .navbar-scroll .nav-link,
+        .navbar-scroll .navbar-toggler-icon,
+        .navbar-scroll .navbar-brand {
+            color: #627199;
+        }
+
+        .container {
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            height: 50px;
+        }
+
+        .navbar-nav .li {
+            opacity: 30%;
+        }
+
+        /* Color of the navbar BEFORE scroll */
+        .navbar-scroll {
+            background-color: #ffffff;
+        }
+
+        /* Color of the links AFTER scroll */
+        .navbar-scrolled .nav-link,
+        .navbar-scrolled .navbar-toggler-icon,
+        .navbar-scroll .navbar-brand {
+            color: #fdf2f2;
+        }
+
+        /* Color of the navbar AFTER scroll */
+        .navbar-scrolled {
+            background-color: #d81c1c;
+        }
+
+        /* An optional height of the navbar AFTER scroll */
+        .navbar.navbar-scroll.navbar-scrolled {
+            padding-top: auto;
+            padding-bottom: auto;
+        }
+
+        .navbar-brand {
+            font-size: unset;
+            height: auto;
+        }
+
+        /* Dropdown menu */
+        .dropdown-menu {
+            background-color: #ffffff;
+            /* Background color of the dropdown menu */
+        }
+
+        .dropdown-item {
+            color: black;
+            /* Text color of dropdown items */
+            font-weight: 500;
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            background-color: #0ca32d;
+            /* Background color of dropdown items on hover/focus */
+            color: rgba(0, 46, 250, 0.87);
+            background: transparent;
+        }
+
+        .battan {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .battan::hover {
+            background-color: #0845a0;
+        }
+    </style>
+    <title>JOBPRESS</title>
+
+</head>
+
+<div class="main_page">
+    <!--Navbar section starts-->
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg shadow-0 border-dark">
+        <div class="container" style="background-color: rgb(255, 255, 255); margin-left: 500px; height:60px;">
+            <a class="navbar-brand" href="#!"><img src="/Image/logo.png"
+                    style="width: 135px; height:34px; margin-left:-480px">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" style="margin-top: -21px;" href="/Files/Hero.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Files/contact.html">About</a>
+                        </li>
+                        <!-- Candidates dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="candidatesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Candidates
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="candidatesDropdown">
+                                <li><a class="dropdown-item" href="/Files/candidates.html">Browse Candidates</a></li>
+                                <li><a class="dropdown-item" href="/Files/demo.html">Browse Companies</a></li>
+                                <li><a class="dropdown-item" href="#">Job Listing</a></li>
+                                <li><a class="dropdown-item" href="#">Job Details</a></li>
+                                <li><a class="dropdown-item" href="#">Job Categories</a></li>
+                                <li><a class="dropdown-item" href="#">Post a resume</a></li>
+                                <li><a class="dropdown-item" href="#">Candidate Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <!-- Companies dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="companiesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Companies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
+                                <li><a class="dropdown-item" href="/Files/demo.html">Browse Companies</a></li>
+                                <li><a class="dropdown-item" href="/Files/postjob1.html">Post a Job</a></li>
+                                <li><a class="dropdown-item" href="#">Employer Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <!-- Blog dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
+                                <li><a class="dropdown-item" href="#">Blog list</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Images</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Videos</a></li>
+                            </ul>
+                        </li>
+                        <!-- Pages dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="/Files/helptab.html">Need Help?</a></li>
+                                <li><a class="dropdown-item" href="/Files/contact.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Pricing Plans</a></li>
+                            </ul>
+                        </li>
+                        <!-- Get Started button -->
+                        <div class="battan">
+                            <li class="nav-item"><a href="/Files/postjob1.html"><button type="button"
+                                        class="btn btn-primary ms-3"
+                                        style="border-radius: 20px 0px 0px 20px;width:150px">Post a Job</button></a>
+
+                            </li>
+                            <li style="margin-left: -5px;" class="nav-item"><a href="/Files/login.html"><button
+                                        type="button" class="btn btn-primary ms-1"
+                                        style="border-radius: 0px 20px 20px 0px; width:100px;margin-right: 10px">Log
+                                        In</button></a>
+
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    <!--Navbar section ends-->
+
+
+    <!-- hero page starts-->
+    <div>
+        <div class="hero">
+            <h2 class="fade-in">Over <span class="number"><strong>100,000<sup>+</sup></strong></span> Jobs are waiting
+                for you</h2>
+            <div class="subtext">
+                <p class="fade-in">
+                    Introducing JobPress, your go-to platform for freelance opportunities! Much like the renowned
+                    freelancer.com, JobPress offers a dynamic space where skilled individuals and businesses connect
+                    seamlessly. Whether you're a talented writer, programmer, designer, or marketer, JobPress empowers
+                    you to showcase your expertise and bid on a diverse range of projects from around the globe. With
+                    our user-friendly interface and robust features, finding the perfect freelance gig or hiring
+                    top-notch talent has never been easier. Join JobPress today and take your freelancing journey to new
+                    heights!
+                </p>
+                <!--button-->
+                <div class="battan">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group search-box">
+                                <div class="input-group-append">
+                                    <!--Search Here-->
+                                    <div class="search-container">
+                                        <input type="text" class="search-box" placeholder="Search your next job">
+                                        <button class="search-button">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+                                    </script>
+                                    <!--Search END-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--hero end-->
+
+        <!--gap div-->
+        <div class="gapp">
+            Featured Jobs<div class="view"> <strong><a href="#" style="text-decoration: none;">VIEW ALL JOBS</a> <i class="fa-solid fa-arrow-right"
+                        style="color: #0d86f0;"></i></strong> </div>
+        </div>
+
+        <!--section page-->
+
+
+        <!--Table Starts-->
+        <div class="table_full">
+            <main class="table" id="customers_table">
+                <section class="table__header">
+                    <h3>Monthly Best Freelancers</h3>
+                    <div class="input-group">
+                        <input type="search" placeholder="Search Data...">
+                        <img src="images/search.png" alt="">
+                    </div>
+                    <div class="export__file">
+                        <label for="export-file" class="export__file-btn" title="Export File"></label>
+                        <input type="checkbox" id="export-file">
+                        <div class="export__file-options">
+                            <label>Export As &nbsp; &#10140;</label>
+                            <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                            <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                            <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                            <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                        </div>
+                    </div>
+                </section>
+                <section class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Order Date <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> <img src="/Image/Fake Images/1.jpeg" alt="">Zinzu Chan Lee</td>
+                                <td> Seoul </td>
+                                <td> 17 Dec, 2024 </td>
+                                <td>
+                                    <p class="status delivered">Web Designer</p>
+                                </td>
+                                <td> <strong> $1428.90 </strong></td>
+                            </tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td><img src="/Image/Fake Images/2.jpeg" alt=""> Jeet Saru </td>
+                                <td> Kathmandu </td>
+                                <td> 27 Aug, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">3D Artist</p>
+                                </td>
+                                <td> <strong>$5350.50</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 3</td>
+                                <td><img src="/Image/Fake Images/3.jpeg" alt=""> Sonal Gharti </td>
+                                <td> Tokyo </td>
+                                <td> 14 Mar, 2023 </td>
+                                <td>
+                                    <p class="status shipped">Video Editor</p>
+                                </td>
+                                <td> <strong>$3210.40</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 4</td>
+                                <td><img src="/Image/Fake Images/4.jpeg" alt=""> Alson GC </td>
+                                <td> New Delhi </td>
+                                <td> 25 May, 2023 </td>
+                                <td>
+                                    <p class="status delivered">Photographer</p>
+                                </td>
+                                <td> <strong>$1149.70</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 5</td>
+                                <td><img src="/Image/Fake Images/5.jpeg" alt=""> Sarita Limbu </td>
+                                <td> Paris </td>
+                                <td> 23 Apr, 2023 </td>
+                                <td>
+                                    <p class="status pending">Graphic Designer</p>
+                                </td>
+                                <td> <strong>$1399.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 6</td>
+                                <td><img src="/Image/Fake Images/6.jpeg" alt=""> Alex Gonley </td>
+                                <td> London </td>
+                                <td> 23 Apr, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Photographer</p>
+                                </td>
+                                <td> <strong>$4399.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 7</td>
+                                <td><img src="/Image/Fake Images/7.jpeg" alt=""> Jeet Saru </td>
+                                <td> New York </td>
+                                <td> 20 May, 2023 </td>
+                                <td>
+                                    <p class="status delivered">Web Designer</p>
+                                </td>
+                                <td> <strong>$2399.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 8</td>
+                                <td><img src="/Image/Fake Images/8.jpeg" alt=""> Aayat Ali Khan </td>
+                                <td> Islamabad </td>
+                                <td> 30 Feb, 2023 </td>
+                                <td>
+                                    <p class="status pending">Copywriter</p>
+                                </td>
+                                <td> <strong>$849.70</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 9</td>
+                                <td><img src="/Image/Fake Images/9.jpeg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Photographer</p>
+                                </td>
+                                <td> <strong>$649.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 10</td>
+                                <td><img src="/Image/Fake Images/10.jpeg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Video editor</p>
+                                </td>
+                                <td> <strong>$2249.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 11</td>
+                                <td><img src="/Image/Fake Images/11.jpeg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Motion Graphic Designer</p>
+                                </td>
+                                <td> <strong>$4449.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 12</td>
+                                <td><img src="/Image/Fake Images/12.jpeg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Animator</p>
+                                </td>
+                                <td> <strong>$3949.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 13</td>
+                                <td><img src="/Image/Fake Images/13.jpeg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Print Designer</p>
+                                </td>
+                                <td> <strong>$5949.99</strong> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+        <script src="script.js"></script>
+        <!--Table Ends-->
+
+        <!--SECTION Starts-->
+    
+            <div class="container1" style="margin: 0; border:0; margin-bottom:-100px; width:100%">
+                <div style="margin-bottom: 25px; height:100px; padding-top:30px;">
+                    <h1 class="container__heading">Our Sevices</h1>
+                </div>
+
+                <div class="container__box" style="display: flex; flex-direction:column; align-items: center; justify-content:center; background-color:#ffffff;margin:0; padding:0">
+                    <!-- HTML5 -->
+                    <div class="upor" style="display: flex;">
+                        <div class="box">
+                            <img src="/Image/ICONS/finance.png" alt="">
+                            <h3>FINANCE</h3>
+                            <p>4286 Jobs</p>
+                        </div>
+                        <!-- CSS3 -->
+                        <div class="box">
+                            <img src="/Image/ICONS/cons.png" alt="">
+                            <h3>CONSTRUCTION</h3>
+                            <p>458 Jobs</p>
+                        </div>
+                        <!-- JavaScript -->
+                        <div class="box">
+                            <img src="/Image/ICONS/logistic.png" alt="">
+                            <h3>LOGISTICS</h3>
+                            <p>1865 Jobs</p>
+                        </div>
+                        <!-- SASS -->
+                        <div class="box">
+                            <img src="/Image/ICONS/art.png" alt="">
+                            <h3>ART/DESIGN</h3>
+                            <p>5286 Jobs</p>
+                        </div>
+                        <!-- JQuery -->
+                        <div class="box">
+                            <img src="/Image/ICONS/sales.png" alt="">
+                            <h3>SALES/MARKETING</h3>
+                            <p>2428 Jobs</p>
+                        </div>
+                    </div>
+                     <!-- React.Js -->
+                    <div class="nich" style="display: flex;">    
+                    <div class="box">
+                            <img src="/Image/ICONS/science.png" alt="">
+                            <h3>SCIENCE</h3>
+                            <p>496 Jobs</p>
+                        </div>
+
+                        <div class="box">
+                            <img src="/Image/ICONS/technology.png" alt="">
+                            <h3>TECHNOLOGY</h3>
+                            <p>4946 Jobs</p>
+                        </div>
+
+                        <div class="box">
+                            <img src="/Image/ICONS/health.png" alt="">
+                            <h3>HEALTHCARE</h3>
+                            <p>2619 Jobs</p>
+                        </div>
+
+                        <div class="box">
+                            <img src="/Image/ICONS/education.png" alt="">
+                            <h3>EDUCATION/TRAINING</h3>
+                            <p>3496 Jobs</p>
+                        </div>
+
+                        <div class="box">
+                            <img src="/Image/ICONS/food.png" alt="">
+                            <h3>FOOD SERVICE</h3>
+                            <p>14496 Jobs</p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        <!--SECTION Ends-->
+        <!--Gapp Again-->
+        <div class="gapp_2">
+            Latest Jobs<div class="view"> <strong><a href="#" style="text-decoration: none;">VIEW ALL JOBS</a> <i class="fa-solid fa-arrow-right"
+                        style="color: #0d86f0;"></i></strong> </div>
+        </div>
+        <!--Gapp Again Ends-->
+
+        <!--Job Table-->
+        <div class="d-flex mt-3 p-2">
+            <div class="card mb-3 w-100">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QROMig5SB65NC4XywBt2fLO3J5fWgL17eZqgUfKfMQ&s"
+                            class="img-fluid rounded-start" alt="..." style="height: 250px; width:250px">
+                    </div>
+                    <div class="col-md-10" style="margin-left: -12%;">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Need Urgent 3D Artist
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis nobis
+                                sequi dicta nihil non dolorum consequuntur quod ipsam debitis repellendus neque
+                                voluptatum nemo, nulla temporibus beatae alias labore vitae obcaecati aspernatur quia
+                                dolores eveniet corporis libero. Esse, quam dignissimos.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    Last updated now
+                                </small>
+                            </p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary " style="margin-left: 15px">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card mb-0" style="max-width:540px;">
+                <div class="row g-0">
+                </div>
+            </div>
+        </div>
+
+        <!--2-->
+        <div class="d-flex mt-3 p-2">
+            <div class="card mb-3 w-100">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGsMV8-PEVOS_zmp2PxTIsO1vl-pXs2VGfStSm2crobA&s"
+                            class="img-fluid rounded-start" alt="..." style="height: 250px; width:250px">
+                    </div>
+                    <div class="col-md-10" style="margin-left: -12%;">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Need Full-Stack Developer
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis nobis
+                                sequi dicta nihil non dolorum consequuntur quod ipsam debitis repellendus neque
+                                voluptatum nemo, nulla temporibus beatae alias labore vitae obcaecati aspernatur quia
+                                dolores eveniet corporis libero. Esse, quam dignissimos.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    Last updated now
+                                </small>
+                            </p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary " style="margin-left: 15px">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card mb-0" style="max-width:540px;">
+                <div class="row g-0">
+                </div>
+            </div>
+        </div>
+
+        <!--3-->
+        <div class="d-flex mt-3 p-2">
+            <div class="card mb-3 w-100">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJCCXI3d-ub84kmGkevO19JUCABydwPP-5Hh_IKKyZw&s"
+                            class="img-fluid rounded-start" alt="..." style="height: 250px; width:250px">
+                    </div>
+                    <div class="col-md-10" style="margin-left: -12%;">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Need Junior Developer
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis nobis
+                                sequi dicta nihil non dolorum consequuntur quod ipsam debitis repellendus neque
+                                voluptatum nemo, nulla temporibus beatae alias labore vitae obcaecati aspernatur quia
+                                dolores eveniet corporis libero. Esse, quam dignissimos.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    Last updated now
+                                </small>
+                            </p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary " style="margin-left: 15px;">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card mb-0" style="max-width:540px;">
+                <div class="row g-0">
+                </div>
+            </div>
+        </div>
+        <!-- Job Table Ends-->
+
+        <!--Prev Section-->
+        <div class="lstdiv">
+            <div>
+                <button style="width: 100px; margin-left: 700%" type="button">
+                    < PREV</button> </div> <div style="margin-top: 8px;">
+                        <a class="number" style="text-decoration: none; opacity: 70%; color: black;"
+                            href="#">1&nbsp;&nbsp; 2&nbsp;&nbsp; 3&nbsp;&nbsp; 4&nbsp;&nbsp; 5</a>
+            </div>
+            <div>
+                <button style="width: 100px;margin-left: -700%"" type=" button"> NEXT ></NEXT></button>
+            </div>
+        </div>
+        <!--Looking for a job-->
+        <div class="banner">
+            <div class="lekha">
+                <h3 style="font-weight: 700;">
+                    LOOKING FOR A JOB
+                </h3>
+                <p>
+                    Join thousand of emplyers and earn what you deserve
+                </p>
+                <div>
+                    <button type="button" class="battan1">GET STARTED NOW</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<!--Footer-->
+<footer>
+    <div class="div1">
+
+        <div class="subdiv1">
+            <img src="/Image/logo white.png" style="width: 100px;">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">BROWSE JOB</a>
+            <a href="#">BROWSE CANDIDATES</a>
+            <a href="#">CONTACT</a>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="subdiv2">
+            <div class="chdiv1">
+                <div class="gs1">
+                    <p style="font-size: x-small;  margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">ABOUT</p>
+                    <a href="#">Company</a>
+                    <a href="#">Our Partners</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="gs2" style="margin-left: 15%;">
+                    <p style="font-size: x-small; margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">FOR CANDIDATES
+                    </p>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse categories</a>
+                    <a href="#">Submit Resume</a>
+                    <a href="#">Candidate Dashboard</a>
+                    <a href="#">Job Alerts</a>
+                    <a href="#">My Bookmarks</a>
+                </div>
+                <div class="gs3" style="margin-left: 10%;">
+                    <p style="font-size: x-small; margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">FOR COMPANIES
+                    </p>
+                    <a href="#">Browse Candidates</a>
+                    <a href="#">Company Dashboard</a>
+                    <a href="#">Add A Job</a>
+                    <a href="#">Packages</a>
+                </div>
+                <div class="gs4" style="margin-left: 5%;">
+                    <p style="font-size: x-small; margin-left: 5px; margin-bottom: 12%; color: #4A79AC;">FOLLOW US</p>
+                    <div class="icon" style="margin-left: -1%;">
+                        <i style="padding-left: 5px;" class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <p style="font-size: x-small; margin-left: 5px; color: #4A79AC;">SUBSCRIBE US</p>
+                    <i style="color: #b2b5c0; cursor: text;">Morbi in ligula nibh. Maecenas ut mi at odio hendrerit
+                        eleifend tempor vitae augue.</i>
+                    <input style="margin-top: 20px; opacity: 100%;" type="text" placeholder="Your email">
+                    <i style="margin-left: 5px; color: rgb(88, 157, 167);" class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="subdiv3">
+            <div class="ls1" style="margin-top: 25px;">
+                <p>© 2017 <a href="#">JobPress</a>. All Rights Reserved. Designed by <a ;" href="#">LeoStudo</a>.</p>
+            </div>
+            <div class="ls2" style="margin-top: -8px;">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERMS OF SERVICE</a>
+                <a href="#">CONDITIONS</a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--end of the website-->
+</body>
+
+</html>
